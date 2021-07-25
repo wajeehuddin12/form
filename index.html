@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background: #cbdffa;
+            }
+
+            fieldset {
+                background: #1876f2;
+            }
+
+            * {
+                color: #ff0000;
+            }
+        </style>
+    </head>
+
+    <body>
+        <fieldset>
+            <legend>
+                <h3>Personal Information</h3>
+            </legend>
+            <form action="">
+                <!-- Name -->
+                <label> Name: <input type="text" id="name" /> </label>
+                <br /><br />
+
+                <!-- address -->
+                <label>Address: <input type="text" id="addr"></label>
+                <br><br>
+
+                <!-- Age -->
+                <label> Age: <input type="number" id="age" /> </label>
+                <br /><br />
+
+                <!-- Education -->
+                Education:
+                <select name="education" id="edu">
+                    <option></option>
+                    <option value="matic">Matic</option>
+                    <option value="inter">Inter</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="masters">Masters</option>
+                </select>
+                <br /><br />
+
+                <!-- Profession -->
+                Profession:
+                <select name="profession" id="prof">
+                    <option></option>
+                    <option value="teaacher">Teacher</option>
+                    <option value="develpor">Develpor</option>
+                    <option value="builder">Builder</option>
+                    <option value="labour">Labour</option>
+                </select>
+                <br /><br />
+
+                <!-- Gender -->
+                Gender: &nbsp;<label>
+                    <input type="radio" name="gender" id="gender" value="male" /> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender" value="female" /> Female
+                </label>
+                <br><br>
+                <input style="margin-left: 90%;" type="submit" onclick="get()" value="submit" />
+            </form>
+        </fieldset>
+
+
+
+
+
+        <script src="./app.js"></script>
+    </body>
+    </html>
